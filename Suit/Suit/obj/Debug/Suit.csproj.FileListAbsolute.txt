@@ -1,0 +1,14 @@
+C:\Users\Анастасия\Desktop\ИИС\2\Suit\Suit\bin\Debug\Suit.exe.config
+C:\Users\Анастасия\Desktop\ИИС\2\Suit\Suit\bin\Debug\Suit.exe
+C:\Users\Анастасия\Desktop\ИИС\2\Suit\Suit\bin\Debug\Suit.pdb
+C:\Users\Анастасия\Desktop\ИИС\2\Suit\Suit\obj\Debug\Suit.csprojResolveAssemblyReference.cache
+C:\Users\Анастасия\Desktop\ИИС\2\Suit\Suit\obj\Debug\Suit.Clients.resources
+C:\Users\Анастасия\Desktop\ИИС\2\Suit\Suit\obj\Debug\Suit.Form1.resources
+C:\Users\Анастасия\Desktop\ИИС\2\Suit\Suit\obj\Debug\Suit.Properties.Resources.resources
+C:\Users\Анастасия\Desktop\ИИС\2\Suit\Suit\obj\Debug\Suit.csproj.GenerateResource.Cache
+C:\Users\Анастасия\Desktop\ИИС\2\Suit\Suit\obj\Debug\Suit.exe
+C:\Users\Анастасия\Desktop\ИИС\2\Suit\Suit\obj\Debug\Suit.pdb
+C:\Users\Анастасия\Desktop\ИИС\2\Suit\Suit\obj\Debug\Suit.Employees.resources
+C:\Users\Анастасия\Desktop\ИИС\2\Suit\Suit\obj\Debug\Suit.NewOrder.resources
+C:\Users\Анастасия\Desktop\ИИС\2\Suit\Suit\obj\Debug\Suit.Order.resources
+C:\Users\Анастасия\Desktop\ИИС\2\Suit\Suit\obj\Debug\Suit.SuitBack.resources
