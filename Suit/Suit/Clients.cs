@@ -13,13 +13,21 @@ namespace Suit
     public partial class Clients : Form
     {
         Form1 form1;
+        Order order;
         
         public Clients(Form1 f)
         {
             form1 = f;
             InitializeComponent();
-            changeForm("start_form");
+            
         }
+        public Clients(string f, Order r)
+        {
+            InitializeComponent();
+            form = f;
+            order = r;
+        }
+        string form = "start_form";
         private void changeForm(string formType)
         {
             switch(formType)
@@ -94,7 +102,25 @@ namespace Suit
 
         private void Clients_FormClosed(object sender, FormClosedEventArgs e)
         {
-            form1.Enabled = true;
+            if (form1 != null) form1.Enabled = true;
+            else if (order != null) order.Enabled = true;
+        }
+
+        private void Clients_Load(object sender, EventArgs e)
+        {
+            changeForm(form);
+        }
+
+        private void dataGridView2_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                int id = 0;
+                //вызов метода получения id клиента на order
+                order.GetClient(id);
+                this.Close();
+            }
+            catch { }
         }
     }
 }

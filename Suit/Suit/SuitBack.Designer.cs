@@ -49,7 +49,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(15, 30);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(203, 22);
+            this.textBox2.Size = new System.Drawing.Size(231, 22);
             this.textBox2.TabIndex = 3;
             // 
             // label6
@@ -63,12 +63,13 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(224, 24);
+            this.button14.Location = new System.Drawing.Point(252, 24);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(32, 28);
             this.button14.TabIndex = 50;
             this.button14.Text = "...";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // numericUpDown1
             // 
@@ -101,10 +102,11 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column3,
             this.Column1});
+            this.dataGridView1.Enabled = false;
             this.dataGridView1.Location = new System.Drawing.Point(15, 138);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(257, 97);
+            this.dataGridView1.Size = new System.Drawing.Size(269, 126);
             this.dataGridView1.TabIndex = 57;
             // 
             // Column3
@@ -119,45 +121,48 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(73, 241);
+            this.button1.Location = new System.Drawing.Point(83, 270);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 28);
             this.button1.TabIndex = 65;
             this.button1.Text = "Отмена";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(176, 241);
+            this.button2.Location = new System.Drawing.Point(186, 270);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 28);
             this.button2.TabIndex = 64;
             this.button2.Text = "Ок";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(134, 81);
+            this.label3.Location = new System.Drawing.Point(120, 81);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 17);
+            this.label3.Size = new System.Drawing.Size(174, 17);
             this.label3.TabIndex = 66;
-            this.label3.Text = "Костюм поврежден";
+            this.label3.Text = "Костюм(ы) поврежден(ы)";
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(110, 81);
+            this.checkBox1.Location = new System.Drawing.Point(96, 81);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 67;
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // SuitBack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(289, 286);
+            this.ClientSize = new System.Drawing.Size(296, 310);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
@@ -171,6 +176,7 @@
             this.Controls.Add(this.label6);
             this.Name = "SuitBack";
             this.Text = "Возврат костюма";
+            this.Load += new System.EventHandler(this.SuitBack_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

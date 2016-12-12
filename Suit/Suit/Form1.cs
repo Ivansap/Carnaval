@@ -33,7 +33,22 @@ namespace Suit
 
         private void журналУчетаToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Order o = new Order();
+            Order o = new Order(this);
+            this.Enabled = false;
+            o.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Order o = new Order("add", this);
+            this.Enabled = false;
+            o.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Order o = new Order("back", this);
+            this.Enabled = false;
             o.Show();
         }
 
