@@ -27,3 +27,5 @@ C:\Users\Анастасия\Documents\GitHub\Carnaval\Suit\Suit\obj\Debug\Suit.P
 C:\Users\Анастасия\Documents\GitHub\Carnaval\Suit\Suit\obj\Debug\Suit.SuitBack.resources
 C:\Users\Анастасия\Documents\GitHub\Carnaval\Suit\Suit\obj\Debug\Suit.csproj.GenerateResource.Cache
 C:\Users\Анастасия\Documents\GitHub\Carnaval\Suit\Suit\obj\Debug\Suit.Suits.resources
+C:\Users\Анастасия\Documents\GitHub\Carnaval\Suit\Suit\obj\Debug\Suit.kind_suit.resources
+C:\Users\Анастасия\Documents\GitHub\Carnaval\Suit\Suit\obj\Debug\Suit.Sizes.resources

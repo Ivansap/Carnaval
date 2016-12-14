@@ -33,7 +33,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -46,6 +45,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.button23 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
@@ -62,9 +66,11 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.button24 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -78,12 +84,11 @@
             this.button16 = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.button25 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -102,12 +107,6 @@
             this.button22 = new System.Windows.Forms.Button();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -148,9 +147,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(15, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 17);
+            this.label1.Size = new System.Drawing.Size(100, 17);
             this.label1.TabIndex = 32;
-            this.label1.Text = "Фамилия Имя Отчество";
+            this.label1.Text = "ФИО клиента";
             // 
             // dateTimePicker1
             // 
@@ -158,16 +157,6 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 33;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(330, 50);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(165, 21);
-            this.checkBox1.TabIndex = 34;
-            this.checkBox1.Text = "Расширенный поиск";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -293,6 +282,49 @@
             this.groupBox1.TabIndex = 46;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Новый заказ № 111 ";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Enabled = false;
+            this.textBox8.Location = new System.Drawing.Point(10, 95);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(335, 22);
+            this.textBox8.TabIndex = 68;
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(94, 295);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(276, 28);
+            this.button23.TabIndex = 67;
+            this.button23.Text = "Распечатать чек на оплату депозита";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(535, 267);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(35, 17);
+            this.label14.TabIndex = 66;
+            this.label14.Text = "руб.";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Enabled = false;
+            this.textBox5.Location = new System.Drawing.Point(446, 264);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(83, 22);
+            this.textBox5.TabIndex = 65;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(418, 95);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(83, 22);
+            this.textBox2.TabIndex = 64;
             // 
             // button9
             // 
@@ -461,33 +493,50 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Возврат костюмов";
             // 
-            // button10
+            // textBox9
             // 
-            this.button10.Location = new System.Drawing.Point(372, 292);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(97, 28);
-            this.button10.TabIndex = 61;
-            this.button10.Text = "Отмена";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.textBox9.Enabled = false;
+            this.textBox9.Location = new System.Drawing.Point(10, 89);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(335, 22);
+            this.textBox9.TabIndex = 85;
             // 
-            // button11
+            // button24
             // 
-            this.button11.Location = new System.Drawing.Point(475, 292);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(97, 28);
-            this.button11.TabIndex = 47;
-            this.button11.Text = "Ок";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button24.Location = new System.Drawing.Point(90, 292);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(276, 28);
+            this.button24.TabIndex = 84;
+            this.button24.Text = "Распечатать чек на оплату заказа";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
-            // textBox2
+            // textBox4
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(418, 95);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(83, 22);
-            this.textBox2.TabIndex = 64;
+            this.textBox4.Enabled = false;
+            this.textBox4.Location = new System.Drawing.Point(418, 116);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(83, 22);
+            this.textBox4.TabIndex = 83;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(505, 114);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(97, 21);
+            this.checkBox3.TabIndex = 82;
+            this.checkBox3.Text = "Оплачена";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(313, 119);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(99, 17);
+            this.label13.TabIndex = 81;
+            this.label13.Text = "Сумма заказа";
             // 
             // textBox3
             // 
@@ -606,49 +655,25 @@
             this.label20.TabIndex = 65;
             this.label20.Text = "ФИО клиента";
             // 
-            // textBox4
+            // button10
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(418, 116);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(83, 22);
-            this.textBox4.TabIndex = 83;
+            this.button10.Location = new System.Drawing.Point(372, 292);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(97, 28);
+            this.button10.TabIndex = 61;
+            this.button10.Text = "Отмена";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // checkBox3
+            // button11
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(505, 114);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(97, 21);
-            this.checkBox3.TabIndex = 82;
-            this.checkBox3.Text = "Оплачена";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(313, 119);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(99, 17);
-            this.label13.TabIndex = 81;
-            this.label13.Text = "Сумма заказа";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(446, 264);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(83, 22);
-            this.textBox5.TabIndex = 65;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(535, 267);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(35, 17);
-            this.label14.TabIndex = 66;
-            this.label14.Text = "руб.";
+            this.button11.Location = new System.Drawing.Point(475, 292);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(97, 28);
+            this.button11.TabIndex = 47;
+            this.button11.Text = "Ок";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // groupBox3
             // 
@@ -674,10 +699,28 @@
             this.groupBox3.Controls.Add(this.label26);
             this.groupBox3.Location = new System.Drawing.Point(11, 78);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(614, 329);
+            this.groupBox3.Size = new System.Drawing.Size(615, 329);
             this.groupBox3.TabIndex = 63;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Редактировать";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Enabled = false;
+            this.textBox10.Location = new System.Drawing.Point(7, 96);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(339, 22);
+            this.textBox10.TabIndex = 86;
+            // 
+            // button25
+            // 
+            this.button25.Location = new System.Drawing.Point(95, 295);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(276, 28);
+            this.button25.TabIndex = 85;
+            this.button25.Text = "Распечатать чек на оплату депозита";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // label15
             // 
@@ -832,6 +875,7 @@
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(299, 24);
             this.comboBox6.TabIndex = 48;
+            this.comboBox6.TextChanged += new System.EventHandler(this.comboBox6_TextChanged);
             // 
             // label26
             // 
@@ -841,60 +885,6 @@
             this.label26.Size = new System.Drawing.Size(100, 17);
             this.label26.TabIndex = 47;
             this.label26.Text = "ФИО клиента";
-            // 
-            // button23
-            // 
-            this.button23.Location = new System.Drawing.Point(94, 295);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(276, 28);
-            this.button23.TabIndex = 67;
-            this.button23.Text = "Распечатать чек на оплату депозита";
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
-            // 
-            // button24
-            // 
-            this.button24.Location = new System.Drawing.Point(90, 292);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(276, 28);
-            this.button24.TabIndex = 84;
-            this.button24.Text = "Распечатать чек на оплату заказа";
-            this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.button24_Click);
-            // 
-            // button25
-            // 
-            this.button25.Location = new System.Drawing.Point(95, 295);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(276, 28);
-            this.button25.TabIndex = 85;
-            this.button25.Text = "Распечатать чек на оплату депозита";
-            this.button25.UseVisualStyleBackColor = true;
-            this.button25.Click += new System.EventHandler(this.button25_Click);
-            // 
-            // textBox8
-            // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(10, 95);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(335, 22);
-            this.textBox8.TabIndex = 68;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(10, 89);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(335, 22);
-            this.textBox9.TabIndex = 85;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Enabled = false;
-            this.textBox10.Location = new System.Drawing.Point(7, 96);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(339, 22);
-            this.textBox10.TabIndex = 86;
             // 
             // Order
             // 
@@ -916,7 +906,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -947,7 +936,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;

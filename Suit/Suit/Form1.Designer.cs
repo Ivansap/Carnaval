@@ -115,18 +115,21 @@
             this.костюмыToolStripMenuItem.Name = "костюмыToolStripMenuItem";
             this.костюмыToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
             this.костюмыToolStripMenuItem.Text = "Костюмы";
+            this.костюмыToolStripMenuItem.Click += new System.EventHandler(this.костюмыToolStripMenuItem_Click);
             // 
             // размерыToolStripMenuItem
             // 
             this.размерыToolStripMenuItem.Name = "размерыToolStripMenuItem";
             this.размерыToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
             this.размерыToolStripMenuItem.Text = "Размеры";
+            this.размерыToolStripMenuItem.Click += new System.EventHandler(this.размерыToolStripMenuItem_Click);
             // 
             // типыКостюмовToolStripMenuItem
             // 
             this.типыКостюмовToolStripMenuItem.Name = "типыКостюмовToolStripMenuItem";
             this.типыКостюмовToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
             this.типыКостюмовToolStripMenuItem.Text = "Типы костюмов";
+            this.типыКостюмовToolStripMenuItem.Click += new System.EventHandler(this.типыКостюмовToolStripMenuItem_Click);
             // 
             // типыПоврежденийToolStripMenuItem
             // 

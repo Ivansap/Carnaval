@@ -85,12 +85,16 @@ namespace Suit
         // ... name
         private void button14_Click(object sender, EventArgs e)
         {
-
+            Suits s = new Suits(this, "name");
+            this.Enabled = false;
+            s.Show();
         }
         // ... art
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Suits s = new Suits(this, "art");
+            this.Enabled = false;
+            s.Show();
         }
     }
 }

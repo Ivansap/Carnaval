@@ -12,10 +12,15 @@ namespace Suit
 {
     public partial class Order : Form
     {
+        DataBase db;
         public Order(Form1 f)
         {
+            db = new DataBase();
             InitializeComponent();
             form1 = f;
+            comboBox6.DataSource = db.fillClientCombo();
+            comboBox6.DisplayMember = "Клиент";
+            comboBox6.ValueMember = "id";
         }
         string form = "start_form";
         Form1 form1;
@@ -24,7 +29,20 @@ namespace Suit
             InitializeComponent();
             form = f;
             form1 = f1;
+            
         }
+
+        private void Order_Load(object sender, EventArgs e)
+        {
+            db=new DataBase();
+            changeForm(form);
+            dataGridView1.DataSource = db.getAllOrders();
+            //comboBox6.DataSource = db.fillClientCombo();
+           // comboBox6.DisplayMember = "Клиент";
+           // comboBox6.ValueMember = "id";
+        }
+
+       
         //+ add
         private void button6_Click(object sender, EventArgs e)
         {
@@ -87,12 +105,7 @@ namespace Suit
             }
         }
 
-        private void button13_Click(object sender, EventArgs e)
-        {
-            SuitBack s = new SuitBack();
-            s.Show();
-        }
-
+       
         private void button2_Click(object sender, EventArgs e)
         {
             changeForm("add");
@@ -138,10 +151,7 @@ namespace Suit
             changeForm("start_form");
         }
 
-        private void Order_Load(object sender, EventArgs e)
-        {
-            changeForm(form);
-        }
+       
         //- add
         private void button7_Click(object sender, EventArgs e)
         {
@@ -216,5 +226,20 @@ namespace Suit
             try { form1.Enabled = true; }
             catch { }
         }
+
+        private void comboBox6_TextChanged(object sender, EventArgs e)
+        {
+            string s = comboBox6.Text;
+            if (s != "")
+            {
+                comboBox6.DataSource = db.getClientsToCombo(s); 
+            }
+            else comboBox6.DataSource = db.fillClientCombo(); 
+                comboBox6.DisplayMember = "Клиент";
+                comboBox6.ValueMember = "id";
+           
+        }
+
+    
     }
 }

@@ -52,6 +52,27 @@ namespace Suit
             o.Show();
         }
 
+        private void костюмыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Suits s = new Suits(this);
+            this.Enabled = false;
+            s.Show();
+        }
+
+        private void типыКостюмовToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            kind_suit k = new kind_suit(this);
+            this.Enabled = false;
+            k.Show();
+        }
+
+        private void размерыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sizes s = new Sizes(this);
+            this.Enabled = false;
+            s.Show();
+        }
+
    
     }
 }
