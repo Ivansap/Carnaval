@@ -38,8 +38,9 @@ namespace Suit
             changeForm(form);
             dataGridView1.DataSource = db.getAllOrders();
             //comboBox6.DataSource = db.fillClientCombo();
-           // comboBox6.DisplayMember = "Клиент";
-           // comboBox6.ValueMember = "id";
+            // comboBox6.DisplayMember = "Клиент";
+            // comboBox6.ValueMember = "id";
+            dataGridView1.Columns[0].Visible = false;
         }
 
        

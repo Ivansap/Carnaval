@@ -14,7 +14,7 @@ namespace Suit
         SqlConnection myConnection;
         public DataBase()
         {
-            myConnection = new SqlConnection("user id=АНАСТАСИЯ; password=;server=АНАСТАСИЯ-ПК; Trusted_Connection=yes; database=Suit; connection timeout=30");
+            myConnection = new SqlConnection("Data Source=DESKTOP-3T2CNMN;Initial Catalog=Interfaces;Integrated Security=True");
         }
     
         public DataTable getAllOrders()
@@ -22,7 +22,7 @@ namespace Suit
             string qu = "select o.id as [Номер], o.date_issue as [Дата выдачи], client.name as [Клиент], men.name as [Менеджер], Suit.name as [Костюм], Size.name as [Размер], body.count as [Количество], body.date_back_plan  as [Дата возврата(план)], body.date_back_fact  as [Дата возврата(факт)]" +
                 "from Orders o "+
                 "left join Clients client on client.id = o.client_FK "+
-                "left join Menedger men on men.id = o.menedger_Fk "+
+                "left join manager men on men.id = o.manager_Fk "+
                 "left join Body body on body.order_FK=o.id "+
                 "left join suit_size ss on ss.id=body.suit_size_FK "+
                 "left join Suit on Suit.id=ss.suit_id " +
